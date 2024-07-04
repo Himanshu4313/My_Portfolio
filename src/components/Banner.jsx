@@ -5,12 +5,12 @@ const Banner = () => {
   return (
     <>
       {/* container div */}
-      <div className="h-[90vh] border-2 flex justify-center items-center gap-14 flex-col md:flex-row lg:flex-row">
-        <div className="border-2">
+      <div className="h-[90vh] flex justify-center items-center gap-14 flex-col md:flex-row lg:flex-row">
+        <div className="py-4 px-4 md:py-0 md:px-0 lg:py-0 lg:px-0">
           <img
             src={profilePic}
             alt="Himanshu profile pic"
-            className="lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] sm:w-[200px] sm:h-[200px]"
+            className="lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[200px] h-[200px]"
           />
         </div>
         <div className="flex flex-col items-center justify-center">
