@@ -61,10 +61,10 @@ const Navbar = () => {
        (!hamburger &&     
         <div className="lg:hidden bg-white py-4 px-4 flex justify-center items-center text-xl font-semibold relative bottom-8">
         <ul>
-         <li className="px-1 py-1">About</li>
-         <li className="px-1 py-1">Experience</li>
-         <li className="px-1 py-1">Projects</li>
-         <li className="px-1 py-1">Contact</li>
+         <li className="px-1 py-1"> <a href="#about">About</a></li>
+         <li className="px-1 py-1"> <a href="#experience">Experience</a></li>
+         <li className="px-1 py-1"> <a href="#projects">Projects</a></li>
+         <li className="px-1 py-1"> <a href="#contact">Contact</a></li>
         </ul>
        </div>
        )
