@@ -15,7 +15,7 @@ const Banner = () => {
         </div>
         <div className="flex flex-col items-center justify-center">
           <p className="font-semibold text-xl text-gray-600">Hello, I'm</p>
-          <h1 className="text-5xl font-semibold py-3">Himanshu Kumar</h1>
+          <h1 className=" text-2xl lg:text-5xl md:text-5xl font-semibold py-3">Himanshu Kumar</h1>
           <p className="text-3xl font-semibold text-gray-600 ">Web Developer</p>
           <div className="py-4 flex justify-center items-center gap-4">
             <button className="border-gray-950 border-2 px-5 py-3 text-base font-medium rounded-full hover:bg-gray-800 hover:text-white">
