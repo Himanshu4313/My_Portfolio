@@ -26,8 +26,8 @@ const Banner = () => {
             </button>
           </div>
           <div className=" flex justify-center items-center gap-2">
-            <SiLinkedin className="text-3xl rounded-full cursor-pointer"/>
-            <FaGithub className="text-3xl rounded-full cursor-pointer" />
+            <SiLinkedin className=" text-4xl md:text3xl lg:text-3xl rounded-full cursor-pointer"/>
+            <FaGithub className="text-4xl md:text3xl lg:text-3xl rounded-full cursor-pointer" />
           </div>
         </div>
       </div>
