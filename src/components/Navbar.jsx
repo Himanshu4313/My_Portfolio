@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [hamburger, sethamburger] = useState(true);
 
@@ -24,17 +25,22 @@ const Navbar = () => {
           id="navbar_container"
         >
           <ul className=" flex justify-center items-center gap-9 font-normal text-2xl">
+      
+          <li className="hover:text-neutral-400 hover:underline hover:decoration-2 hover:duration-75">
+                    <Link to = {"/"}>Home</Link>
+            </li>
+
             <li className="hover:text-neutral-400 hover:underline hover:decoration-2 hover:duration-75">
-              <a href="#about">About</a>
+                    <Link to = {"/about"}>About</Link>
             </li>
             <li className="hover:text-neutral-400 hover:underline hover:decoration-2 hover:duration-75">
-              <a href="#experience">Experience</a>
+              <Link to={"/experience"}>Experience</Link>
             </li>
             <li className="hover:text-neutral-400 hover:underline hover:decoration-2 hover:duration-75">
-              <a href="#projects">Projects</a>
+              <Link to={"/projects"}>Projects</Link>
             </li>
             <li className="hover:text-neutral-400 hover:underline hover:decoration-2 hover:duration-75">
-              <a href="#contact">Contact</a>
+              <Link to ={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -61,10 +67,11 @@ const Navbar = () => {
        (!hamburger &&     
         <div className="lg:hidden bg-white py-4 px-4 flex justify-center items-center text-xl font-semibold relative bottom-8">
         <ul>
-         <li className="px-1 py-1"> <a href="#about">About</a></li>
-         <li className="px-1 py-1"> <a href="#experience">Experience</a></li>
-         <li className="px-1 py-1"> <a href="#projects">Projects</a></li>
-         <li className="px-1 py-1"> <a href="#contact">Contact</a></li>
+        <li className="px-1 py-1"> <Link to={"/"}>Home</Link></li>
+         <li className="px-1 py-1"> <Link to={"/about"}>About</Link></li>
+         <li className="px-1 py-1"> <Link to={"/experience"}>Experience</Link></li>
+         <li className="px-1 py-1"> <Link to={"/projects"}>Projects</Link></li>
+         <li className="px-1 py-1"> <Link to={"/contact"}>Contact</Link></li>
         </ul>
        </div>
        )
